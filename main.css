@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+}
+
+#hamburger-icon {
+    background-color: #7491FA;
+    display: inline-block;
+    position: relative;
+    border-radius: 500px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icon-circle {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all cubic-bezier(0, 1.03, 1, 1.35) 0.35s;
+}
+
+.top {
+    margin-top: 18%;
+}
+
+.mid {
+    margin-top: 48%;
+}
+
+.bot {
+    margin-top: 78%;
+}
+
+.icon-circle.close .top {
+    transform: rotate(45deg);
+    margin-top: 48%;
+}
+
+.icon-circle.close .mid, .icon-circle.close .bot {
+    transform: rotate(-45deg);
+    margin-top: 48%;
+}
