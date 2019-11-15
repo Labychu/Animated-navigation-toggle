@@ -1,4 +1,3 @@
-$('#hamburger-icon').click( () => {
-    $('.icon-circle').toggleClass('close');
-});
-
+$('.icon').click( () => {
+    $('.active-element').toggleClass('active');
+})
